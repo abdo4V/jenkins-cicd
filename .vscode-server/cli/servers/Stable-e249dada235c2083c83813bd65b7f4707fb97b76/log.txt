@@ -1,0 +1,89 @@
+*
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+Server bound to /tmp/code-eb988066-eb1e-4ada-bb4c-b793a38562d3
+Extension host agent listening on /tmp/code-eb988066-eb1e-4ada-bb4c-b793a38562d3
+
+[13:24:33] 
+
+
+
+
+[13:24:33] Extension host agent started.
+[13:24:34] [<unknown>][a9732489][ManagementConnection] New connection established.
+[13:24:34] [<unknown>][350e0958][ExtensionHostConnection] New connection established.
+[13:24:34] [<unknown>][350e0958][ExtensionHostConnection] <1995> Launched Extension Host Process.
+New EH opened, aborting shutdown
+[13:29:33] New EH opened, aborting shutdown
+[13:43:35] No ptyHost heartbeat after 6 seconds
+[13:48:07] No ptyHost heartbeat after 6 seconds
+[13:48:39] No ptyHost heartbeat after 6 seconds
+[13:48:40] [<unknown>][d78a1416][ExtensionHostConnection] New connection established.
+[13:48:40] [<unknown>][71405272][ManagementConnection] New connection established.
+[13:48:41] [<unknown>][d78a1416][ExtensionHostConnection] <6418> Launched Extension Host Process.
+[13:48:57] No ptyHost heartbeat after 6 seconds
+[13:49:05] #3: https://main.vscode-cdn.net/extensions/marketplace.json - error GET AggregateError [ETIMEDOUT]: 
+[13:49:24] No ptyHost heartbeat after 6 seconds
+rejected promise not handled within 1 second: CodeExpectedError: Could not find pty 10 on pty host
+stack trace: CodeExpectedError: Could not find pty 10 on pty host
+    at I.W (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:12233)
+    at I.updateTitle (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:7722)
+    at O.s.<computed> (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2962)
+    at Object.call (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at Kc.s (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80170)
+    at Kc.q (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79693)
+    at hs.value (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79095)
+    at C.B (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at C.fire (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.w (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29136)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+[13:49:43] Error [CodeExpectedError]: Could not find pty 10 on pty host
+    at I.W (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:12233)
+    at I.updateTitle (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:7722)
+    at O.s.<computed> (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2962)
+    at Object.call (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at Kc.s (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80170)
+    at Kc.q (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79693)
+    at hs.value (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79095)
+    at C.B (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at C.fire (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.w (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29136)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+rejected promise not handled within 1 second: CodeExpectedError: Could not find pty 10 on pty host
+stack trace: CodeExpectedError: Could not find pty 10 on pty host
+    at I.W (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:12233)
+    at I.updateIcon (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:7772)
+    at O.s.<computed> (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2962)
+    at Object.call (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at Kc.s (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80170)
+    at Kc.q (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79693)
+    at hs.value (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79095)
+    at C.B (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at C.fire (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.w (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29136)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+[13:49:43] Error [CodeExpectedError]: Could not find pty 10 on pty host
+    at I.W (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:12233)
+    at I.updateIcon (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:7772)
+    at O.s.<computed> (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2962)
+    at Object.call (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at Kc.s (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80170)
+    at Kc.q (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79693)
+    at hs.value (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79095)
+    at C.B (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at C.fire (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.w (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29136)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+[14:02:03] [<unknown>][a9732489][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...

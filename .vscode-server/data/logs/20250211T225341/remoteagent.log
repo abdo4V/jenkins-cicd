@@ -1,0 +1,35 @@
+2025-02-11 22:53:41.182 [info] 
+
+
+
+
+2025-02-11 22:53:41.192 [info] Extension host agent started.
+2025-02-11 22:53:41.241 [info] Started initializing default profile extensions in extensions installation folder. file:///home/abdelrahman/.vscode-server/extensions
+2025-02-11 22:53:41.244 [info] [<unknown>][fd858190][ExtensionHostConnection] New connection established.
+2025-02-11 22:53:41.253 [info] [<unknown>][966560e5][ManagementConnection] New connection established.
+2025-02-11 22:53:41.261 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/abdelrahman/.vscode-server/extensions
+2025-02-11 22:53:41.342 [info] [<unknown>][fd858190][ExtensionHostConnection] <2907> Launched Extension Host Process.
+2025-02-11 22:53:41.915 [error] #1: https://main.vscode-cdn.net/extensions/marketplace.json - error GET AggregateError [ETIMEDOUT]: 
+2025-02-11 22:58:41.194 [info] New EH opened, aborting shutdown
+2025-02-11 23:05:29.253 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-11 23:54:00.186 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-11 23:54:28.350 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-12 00:06:27.113 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-12 00:33:35.276 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-12 00:39:08.519 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-12 00:48:56.412 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-12 00:54:55.436 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-12 00:55:06.549 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-12 00:55:43.787 [error] No ptyHost heartbeat after 12 seconds
+2025-02-12 00:55:57.938 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-12 00:56:04.538 [error] No ptyHost heartbeat after 12 seconds
+2025-02-12 00:56:46.681 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-12 00:56:57.914 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-12 00:57:21.675 [info] [<unknown>][966560e5][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2025-02-12 00:57:25.132 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-12 01:07:55.307 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-12 01:08:55.794 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/server/out/server-main.js:181:1060)
+    at process.emit (node:events:530:35)
+2025-02-12 01:09:05.980 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-12 02:16:58.448 [warning] No ptyHost heartbeat after 6 seconds

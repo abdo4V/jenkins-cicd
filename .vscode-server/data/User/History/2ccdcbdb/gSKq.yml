@@ -1,0 +1,74 @@
+
+---
+- name: Install and configure LEMP stack
+  hosts: lemp_servers
+  become: yes
+  tasks:
+    - name: Update apt packages
+      apt:
+        update_cache: yes
+
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Install MySQL
+      apt:
+        name: mysql-server
+        state: present
+
+    - name: Install PHP and PHP-FPM
+      apt:
+        name:
+          - php-fpm
+          - php-mysql
+        state: present
+
+    - name: Ensure Nginx is started and enabled
+      systemd:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Ensure MySQL is started and enabled
+      systemd:
+        name: mysql
+        state: started
+        enabled: yes
+
+    - name: Ensure PHP-FPM is started and enabled
+      systemd:
+        name: php8.1-fpm
+        state: started
+        enabled: yes
+
+    - name: Allow SSH, HTTP, and HTTPS through firewall
+      ufw:
+        rule: allow
+        name: "{{ item }}"
+      with_items:
+        - OpenSSH
+        - 'Nginx HTTP'
+        - 'Nginx HTTPS'
+    - name: Copy Nginx site configuration
+      copy:
+        src: nginx_config
+        dest: /etc/nginx/sites-available/mywebsite
+        notify: Reload Nginx
+
+    - name: Enable site configuration
+      file:
+        src: /etc/nginx/sites-available/mywebsite
+        dest: /etc/nginx/sites-enabled/mywebsite
+        state: link
+        notify: Reload Nginx
+
+    - name: Copy PHP project files
+      copy:
+        src: php_project/
+        dest: /var/www/mywebsite/
+        owner: www-data
+        group: www-data
+        mode: '0755'
+

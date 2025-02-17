@@ -1,0 +1,41 @@
+2025-02-12 01:07:14.417 [info] 
+
+
+
+
+2025-02-12 01:07:14.427 [info] Extension host agent started.
+2025-02-12 01:07:14.726 [info] [<unknown>][40b681c9][ManagementConnection] New connection established.
+2025-02-12 01:07:14.728 [info] [<unknown>][88df0968][ExtensionHostConnection] New connection established.
+2025-02-12 01:07:15.841 [info] [<unknown>][88df0968][ExtensionHostConnection] <61450> Launched Extension Host Process.
+2025-02-12 01:07:27.505 [error] CodeExpectedError: Could not find pty 4 on pty host
+    at I.W (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:12233)
+    at I.updateTitle (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:7722)
+    at O.s.<computed> (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2962)
+    at Object.call (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at Kc.s (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80170)
+    at Kc.q (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79693)
+    at hs.value (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79095)
+    at C.B (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at C.fire (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.w (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29136)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-02-12 01:07:35.626 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-12 01:07:45.773 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-12 01:07:49.348 [info] [<unknown>][88df0968][ExtensionHostConnection] The client has reconnected.
+2025-02-12 01:07:57.587 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-12 01:08:16.602 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-12 01:08:28.805 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-12 01:12:14.429 [info] New EH opened, aborting shutdown
+2025-02-12 01:45:06.207 [info] [<unknown>][40b681c9][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-02-12 01:45:07.220 [info] [<unknown>][88df0968][ExtensionHostConnection] <61450> Extension Host Process exited with code: 0, signal: null.
+2025-02-12 01:45:07.220 [info] Last EH closed, waiting before shutting down
+2025-02-12 01:45:46.127 [info] [<unknown>][ca30d3c4][ExtensionHostConnection] New connection established.
+2025-02-12 01:45:46.251 [info] [<unknown>][ca30d3c4][ExtensionHostConnection] <71409> Launched Extension Host Process.
+2025-02-12 01:45:46.338 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/server-main.js:181:1060)
+    at process.emit (node:events:530:35)
+2025-02-12 01:45:46.344 [info] [<unknown>][676c4061][ManagementConnection] New connection established.
+2025-02-12 01:45:47.989 [error] #3: https://main.vscode-cdn.net/extensions/marketplace.json - error GET AggregateError [ETIMEDOUT]: 
+2025-02-12 01:50:07.222 [info] New EH opened, aborting shutdown

@@ -1,0 +1,57 @@
+---
+- name: Set up LEMP Stack and Deploy PHP Website
+  hosts: web_servers
+  become: true
+  tasks:
+
+    # تحديث النظام
+    - name: Update and upgrade apt packages
+      apt:
+        update_cache: yes
+        upgrade: dist
+        cache_valid_time: 3600
+
+    # تثبيت Nginx
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+
+    # تثبيت MySQL
+    - name: Install MySQL Server
+      apt:
+        name: mysql-server
+        state: present
+
+    # تثبيت PHP
+    - name: Install PHP and required PHP modules
+      apt:
+        name:
+          - php-fpm
+          - php-mysql
+        state: present
+
+    # نشر الموقع
+    - name: Deploy PHP Website
+      copy:
+        src: /path/to/your/php/files/
+        dest: /var/www/html/
+        owner: www-data
+        group: www-data
+        mode: '0755'
+
+    # تأكد من أن خدمات Nginx و PHP تعمل
+    - name: Ensure nginx and php-fpm are running
+      systemd:
+        name: "{{ item }}"
+        state: started
+        enabled: yes
+      loop:
+        - nginx
+        - php7.4-fpm
+
+    # إعداد الجدار الناري
+    - name: Allow HTTP and HTTPS through the firewall
+      ufw:
+        rule: allow
+        name: 'Nginx Full'

@@ -1,0 +1,5 @@
+Listening on 127.0.0.1:37423
+[2025-02-13 14:53:30] info Disposed of connection to running server.
+[2025-02-13 14:53:30] info Checking /home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/log.txt and /home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/pid.txt for a running server...
+[2025-02-13 14:53:30] info Found running server (pid=1954)
+[2025-02-13 15:04:48] info Disposed of connection to running server.

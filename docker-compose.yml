@@ -1,0 +1,25 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - "8080:80"
+    networks:
+      - mynet
+    volumes:
+      - myvol1:/var/www/html
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: dbname
+    networks:
+      - mynet
+    volumes:
+      - myvol1:/var/lib/mysql
+networks:
+  mynet:
+    driver: bridge
+volumes:
+  myvol1:

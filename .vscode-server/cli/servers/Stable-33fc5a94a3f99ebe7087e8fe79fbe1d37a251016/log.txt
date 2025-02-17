@@ -1,0 +1,40 @@
+*
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+Server bound to /tmp/code-3001516d-d54e-4a63-a180-d7afb584ff0f
+Extension host agent listening on /tmp/code-3001516d-d54e-4a63-a180-d7afb584ff0f
+
+[22:53:41] 
+
+
+
+
+[22:53:41] Extension host agent started.
+[22:53:41] Started initializing default profile extensions in extensions installation folder. file:///home/abdelrahman/.vscode-server/extensions
+[22:53:41] [<unknown>][fd858190][ExtensionHostConnection] New connection established.
+[22:53:41] [<unknown>][966560e5][ManagementConnection] New connection established.
+[22:53:41] Completed initializing default profile extensions in extensions installation folder. file:///home/abdelrahman/.vscode-server/extensions
+[22:53:41] [<unknown>][fd858190][ExtensionHostConnection] <2907> Launched Extension Host Process.
+[22:53:41] #1: https://main.vscode-cdn.net/extensions/marketplace.json - error GET AggregateError [ETIMEDOUT]: 
+New EH opened, aborting shutdown
+[22:58:41] New EH opened, aborting shutdown
+[23:05:29] No ptyHost heartbeat after 6 seconds
+[23:54:02] No ptyHost heartbeat after 6 seconds
+[23:54:28] No ptyHost heartbeat after 6 seconds
+[00:06:27] No ptyHost heartbeat after 6 seconds
+[00:33:35] No ptyHost heartbeat after 6 seconds
+[00:39:08] No ptyHost heartbeat after 6 seconds
+[00:48:56] No ptyHost heartbeat after 6 seconds
+[00:54:55] No ptyHost heartbeat after 6 seconds
+[00:55:06] No ptyHost heartbeat after 6 seconds
+[00:55:47] No ptyHost heartbeat after 12 seconds
+[00:55:57] No ptyHost heartbeat after 6 seconds
+[00:56:04] No ptyHost heartbeat after 12 seconds
+[00:56:46] No ptyHost heartbeat after 6 seconds
+[00:56:57] No ptyHost heartbeat after 6 seconds
+[00:57:21] [<unknown>][966560e5][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[00:57:25] No ptyHost heartbeat after 6 seconds

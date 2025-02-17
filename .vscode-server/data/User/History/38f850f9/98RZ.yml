@@ -1,0 +1,111 @@
+---
+- name: Install and configure LEMP Stack
+  hosts: 192.168.1.6
+  become: yes
+  tasks:
+
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+
+    - name: Install MySQL
+      apt:
+        name: mysql-server
+        state: present
+        update_cache: yes
+
+
+    - name: Install PHP
+      apt:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - php-fpm
+        - php-mysql
+
+
+    - name: Copy index.php to web directory
+      copy:
+        src: /home/abdelrahman/index.php
+        dest: /var/www/html/index.php
+        owner: www-data
+        group: www-data
+        mode: '0644'
+
+
+    - name: Ensure Nginx service is running
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Ensure MySQL service is running
+      service:
+        name: mysql
+        state: started
+        enabled: yes
+
+    - name: Ensure PHP-FPM service is running
+      service:
+        name: php8.1-fpm
+        state: started
+        enabled: yes
+
+
+    - name: Setup UFW Firewall
+      ufw:
+        state: enabled
+        rule: allow
+        port: "{{ item }}"
+      with_items:
+        - '22'  # SSH
+        - '80'  # HTTP
+        - '443' # HTTPS
+
+- name: Copy Nginx site configuration
+  copy:
+    src: nginx_config
+    dest: /etc/nginx/sites-available/mywebsite
+  notify: Reload Nginx
+
+- name: Enable site configuration
+  file:
+    src: /etc/nginx/sites-available/mywebsite
+    dest: /etc/nginx/sites-enabled/mywebsite
+    state: link
+  notify: Reload Nginx
+
+- name: Copy PHP project files
+  copy:
+    src: php_project/
+    dest: /var/www/mywebsite/
+    owner: www-data
+    group: www-data
+    mode: '0755'
+
+
+- name: Create MySQL database
+  mysql_db:
+    name: mywebsite_db
+    state: present
+
+- name: Create MySQL user
+  mysql_user:
+    name: mywebsite_user
+    password: "StrongPassword123!"
+    priv: "mywebsite_db.*:ALL"
+    state: present
+    host: "%"
+
+- name: Restart Nginx
+  service:
+    name: nginx
+    state: restarted
+
+- name: Restart PHP-FPM
+  service:
+    name: php8.1-fpm
+    state: restarted

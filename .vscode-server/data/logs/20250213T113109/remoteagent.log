@@ -1,0 +1,68 @@
+2025-02-13 11:31:11.244 [info] 
+
+
+
+
+2025-02-13 11:31:11.293 [info] Extension host agent started.
+2025-02-13 11:31:12.587 [info] [<unknown>][bfb0d308][ManagementConnection] New connection established.
+2025-02-13 11:31:12.635 [info] [<unknown>][5986927c][ExtensionHostConnection] New connection established.
+2025-02-13 11:31:13.422 [info] [<unknown>][5986927c][ExtensionHostConnection] <2369> Launched Extension Host Process.
+2025-02-13 11:31:21.447 [error] No ptyHost response to createProcess after 5 seconds
+2025-02-13 11:31:21.448 [error] No ptyHost response to createProcess after 5 seconds
+2025-02-13 11:31:21.448 [error] No ptyHost response to createProcess after 5 seconds
+2025-02-13 11:31:21.448 [error] No ptyHost response to createProcess after 5 seconds
+2025-02-13 11:32:04.453 [info] [<unknown>][bfb0d308][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-02-13 11:32:04.495 [info] [<unknown>][5986927c][ExtensionHostConnection] <2369> Extension Host Process exited with code: 0, signal: null.
+2025-02-13 11:32:04.496 [info] Cancelling previous shutdown timeout
+2025-02-13 11:32:04.496 [info] Last EH closed, waiting before shutting down
+2025-02-13 11:32:38.305 [info] [<unknown>][630cd605][ExtensionHostConnection] New connection established.
+2025-02-13 11:32:38.308 [info] [<unknown>][630cd605][ExtensionHostConnection] <2778> Launched Extension Host Process.
+2025-02-13 11:32:38.311 [info] [<unknown>][faec56bf][ManagementConnection] New connection established.
+2025-02-13 11:32:41.868 [error] CodeExpectedError: Could not find pty 4 on pty host
+    at I.W (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:12233)
+    at I.updateTitle (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:7722)
+    at O.s.<computed> (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2962)
+    at Object.call (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at Kc.s (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80170)
+    at Kc.q (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79693)
+    at hs.value (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79095)
+    at C.B (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at C.fire (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.w (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29136)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-02-13 11:32:47.234 [error] CodeExpectedError: Could not find pty 10 on pty host
+    at I.W (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:12233)
+    at I.updateTitle (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:7722)
+    at O.s.<computed> (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2962)
+    at Object.call (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at Kc.s (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80170)
+    at Kc.q (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79693)
+    at hs.value (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79095)
+    at C.B (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at C.fire (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.w (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29136)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-02-13 11:32:47.235 [error] CodeExpectedError: Could not find pty 10 on pty host
+    at I.W (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:12233)
+    at I.updateIcon (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:7772)
+    at O.s.<computed> (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2962)
+    at Object.call (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at Kc.s (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80170)
+    at Kc.q (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79693)
+    at hs.value (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79095)
+    at C.B (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at C.fire (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.w (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29136)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-02-13 11:37:04.499 [info] New EH opened, aborting shutdown
+2025-02-13 11:37:04.501 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///home/abdelrahman/.vscode-server/cli/servers/Stable-e249dada235c2083c83813bd65b7f4707fb97b76/server/out/server-main.js:181:1060)
+    at process.emit (node:events:530:35)
+2025-02-13 12:19:15.218 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-13 12:27:11.096 [warning] No ptyHost heartbeat after 6 seconds
