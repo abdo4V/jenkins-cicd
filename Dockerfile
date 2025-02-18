@@ -20,7 +20,7 @@ RUN apt-get install -y \
     && apt-get clean
 
 # Copy the PHP website files to the appropriate directory
-COPY ./src /var/www/html/
+COPY ./index.html /var/www/html/index.html
 
 # Configure Nginx to use PHP-FPM
 RUN rm /etc/nginx/sites-enabled/default
